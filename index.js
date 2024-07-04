@@ -6,6 +6,14 @@ app.get('/', (req, res) => {
     res.send('Your React app is running by Asyraf!');
 });
 
+app.get('/health', (req, res) => {
+    res.send('Server is healthy');
+
+    // Perform actions to check the health of the server
+    // For example, check the database connection, check the server memory, etc.
+
+});
+
 app.get('/exit', (req, res) => {
     // Perform actions to stop the server or any other desired actions
     res.send('Server stopped');
