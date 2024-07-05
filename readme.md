@@ -1,10 +1,10 @@
-Here is a Markdown version of the README for your DevOps Project:
-
----
-
 # DevOps Project
 
 This repository contains the source code and configuration for a DevOps project.
+
+# Group name
+
+Devops Defender 
 
 ## Project Structure
 
