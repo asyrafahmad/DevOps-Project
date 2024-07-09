@@ -1,30 +1,60 @@
-<!-- public/index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="min-h-screen">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>My Portfolio</h1>
+<body class="flex flex-col h-screen bg-gray-900 text-gray-200 font-sans">
+    <header class="sticky top-0 z-50 bg-black text-white p-6 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold">My Portfolio</h1>
+        </div>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>DevOps Defender</p>
+    <main class="container mx-auto p-6 grow">
+        <section id="about" class="mb-12">
+            <h2 class="text-3xl font-semibold mb-4">About Us</h2>
+            <p class="text-lg leading-relaxed">We are DevOps Defender, a team of skilled professionals dedicated to implementing and optimizing DevOps practices. Our mission is to streamline development processes, enhance collaboration, and deliver high-quality software efficiently.</p>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>DevOps Project</h3>
-                <p>Team Members: </p>
-                <img src="images/Team.png" alt="Project 2" class="project-img">
+        <section id="services" class="mb-12">
+            <h2 class="text-3xl font-semibold mb-4">Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="service bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Continuous Integration</h3>
+                    <p>Automating the build and testing process to ensure code quality and accelerate development.</p>
+                </div>
+                <div class="service bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Continuous Delivery</h3>
+                    <p>Streamlining the deployment process to deliver features and updates quickly and reliably.</p>
+                </div>
+                <div class="service bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Infrastructure as Code</h3>
+                    <p>Managing and provisioning infrastructure using code to ensure consistency and scalability.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="mb-12">
+            <h2 class="text-3xl font-semibold mb-4">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="project bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">DevOps Project</h3>
+                    <p class="mb-4">Team Members: Awis, Asyraf, Faiz Ahmad, Farid</p>
+                    <img src="images/Team.png" alt="Project 2" class="project-img w-full h-auto rounded">
+                </div>
+                <div class="project bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Cloud Migration</h3>
+                    <p class="mb-4">Migrating legacy applications to modern cloud infrastructure.</p>
+                    <img src="images/cloud-migration.svg" alt="Cloud Migration" class="project-img w-full h-auto rounded">
+                </div>
             </div>
         </section>
     </main>
+    <footer class="sticky bottom-0 z-50 bg-black text-white p-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 DevOps Defender. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
