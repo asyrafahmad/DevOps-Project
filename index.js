@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const client = require('prom-client');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Collect default metrics
 const collectDefaultMetrics = client.collectDefaultMetrics;
