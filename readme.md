@@ -22,6 +22,7 @@ This project demonstrates the implementation of a complete DevOps pipeline. It i
 - **Continuous Integration (CI):** Automated testing and building of the application.
 - **Continuous Delivery (CD):** Automated deployment to staging environments.
 - **Continuous Deployment:** Automated deployment to production environments.
+- **Monitoring:** Allows monitoring of application health.
 
 ## Technologies Used
 
@@ -29,6 +30,7 @@ This project demonstrates the implementation of a complete DevOps pipeline. It i
 - **CI/CD:** Jenkins, GitHub Actions
 - **Containerization:** Docker
 - **Cloud Provider:** AWS, Azure, or Google Cloud
+- **Monitoring:** Prometheus and Grafana
 
 ## Architecture
 
@@ -47,24 +49,11 @@ To set up and run this project locally, follow these steps:
     git clone https://github.com/asyrafahmad/DevOps-Project.git
     cd DevOps-Project
     ```
-
-2. **Configure Environment Variables:**
-    Set up your environment variables as needed. Refer to the `.env.example` file for the required variables.
-
-3. **Install Dependencies:**
-    Install the required dependencies using the appropriate package manager.
-
-    ```bash
-    # For Node.js projects
-    npm install
-    ```
-
-4. **Run the Application:**
+2. **Run the Application:**
     Start the application locally.
 
     ```bash
-    # For Node.js projects
-    npm start
+    docker compose up -d
     ```
 
 ## Usage
